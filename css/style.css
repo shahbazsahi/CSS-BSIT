@@ -1,88 +1,124 @@
-*{
+* {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-#container{
-    width: 90%;
-    border: 1px #FF00FFFF solid ;
+
+#container {
+    width: 100%;
+    border: 1px #FF00FFFF solid;
     margin: 0 auto;
     border-radius: 10px;
 }
 
-#header{
+#header {
     width: 100%;
     border: 1px black solid;
     height: 130px;
 }
 
-#header h1{
+#header h1 {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: blueviolet;
     margin: 10 0 0 0;
     margin-top: 40px;
 }
 
-#nav-bar{
+#nav-bar {
     width: 100%;
     background-color: aqua;
     height: 41px;
 }
 
-#nav-bar ul{
+#nav-bar ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
 }
 
-#nav-bar li{
+#nav-bar li {
     float: left;
     background-color: aqua;
 }
 
-#nav-bar a, #nav-bar a:visited{
+#nav-bar a,
+#nav-bar a:visited {
     color: burlywood;
     text-decoration: none;
     padding: 10px 15px;
     display: block;
 }
 
-#nav-bar a:hover{
+#nav-bar a:hover {
     background-color: brown;
     color: aqua;
 }
 
 
-.clear{
+.clear {
     clear: both;
 }
 
-#main-content{
+#main-content {
     margin-top: 20px;
     width: 100%;
 }
 
-#footer{
+#footer {
     width: 100%;
     margin-top: 20px;
     border-top: 1px solid brown;
 }
 
-#footer-block{
+#footer-block {
     float: left;
     width: 32%;
     border: 1px solid blueviolet;
 }
 
-#footer-block a{
+#footer-block a {
     text-decoration-style: dotted;
     color: chocolate;
 }
 
-#footer-block li{
+#footer-block li {
     list-style-type: disc;
     color: chocolate;
 }
 
-.First-Word{
+.First-Word {
     font-size: 40px;
 }
 
+#gallery {
+    width: 100%;
+    border: 1px solid burlywood;
+}
+
+#gallery img {
+    width: 21%;
+    padding: 10px;
+    border: 1px solid burlywood;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+@media screen and (max-width: 480px) {
+    #gallery img {
+        width: 95%;
+    }
+
+    #main-content #nav-bar {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 720px) {
+    #gallery img {
+        width: 40%;
+    }
+}
+
+#gallery img:hover {
+    filter: grayscale(100%);
+}
+
+#
